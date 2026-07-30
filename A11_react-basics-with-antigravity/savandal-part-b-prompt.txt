@@ -1,0 +1,25 @@
+Task: Analyze @src/App.css, @src/components/tracks/SongList.css, and @src/components/Components.css and update their styling to match an Apple Music-inspired mobile playlist design.
+
+Design Requirements:
+
+Background: Apply a circular/radial background gradient transitioning from a rich, vibrant violet/purple at the top to a deep dark blue at the bottom. Ensure it covers the full mobile view gracefully.
+
+Song Containers: Apply a frosted glass (glassmorphism) appearance to the song item containers:
+
+Semi-transparent background (e.g., rgba(255, 255, 255, 0.08) to 0.12).
+
+Subtle background blur (backdrop-filter: blur(12px) or -webkit-backdrop-filter).
+
+Subtle, thin glowing border (e.g., 1px solid rgba(255, 255, 255, 0.15)).
+
+Rounded corners (border-radius: 16px to 20px).
+
+Layout & Mobile View:
+
+Structure the container view like a clean mobile app screen.
+
+Do NOT include any phone status bar, camera notch, or punch hole elements.
+
+Text & Details: Ensure text colors contrast clearly against the glass containers (bright white for song titles, muted violet/light gray for artist names).
+
+Constraint: Do not create any new files or add new components. Only modify the styling within @src/App.css, @src/components/tracks/SongList.css, and @src/components/Components.css.
