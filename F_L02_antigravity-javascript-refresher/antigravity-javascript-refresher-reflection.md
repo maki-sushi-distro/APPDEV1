@@ -101,3 +101,14 @@ If it encounters an erro, explain the error before fixing it.
 
 - In this exercise, I make my agent read my file and explain the parts that are responsible for behavior and changes as well as the scripts used.
 
+- ### 08_essential_features.js
+-  Open 08_essential_features.js.
+  
+  Read the file and add new array about foods
+  
+  After creating the array, explain the following:
+  1. Explain how the destructuring works.
+  2. How the computer treats the values when appended to the console.log
+
+- I learned in this exercise how to make my agent create an array and apply destructuring, and I also learned how the destructuring works with the help of the explanation created by the agent.
+
