@@ -73,3 +73,18 @@ If it encounters an erro, explain the error before fixing it.
 - In this exercise, I learned how the array works and how the following functions used to modify and display the values of the array.
 
 ---
+- ### 06_control_structures.js
+- Open and read the 06_control_structures.js
+  Run the file
+  
+  Identify the error and fix it.
+  
+  First, reproduce the output
+  Then, explain the root cause
+  Lastly, create a safe fix.
+  
+  Ask my permission first before doing the fix.
+  Then run node 06_control_structures.js again
+
+- In this exercise, I learned how to make my agent fix some bugs and implement a safe fix.
+
