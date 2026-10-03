@@ -42,3 +42,17 @@
 - I learned in this exercise to create a prompt that allows the agent to write a function and implement a function that returns an object.
 
 ---
+- ### 04_objects.js
+- Open and read 04_objects.js
+  
+  Create an Dog object.
+  Requirements:
+  - it must include behavior, name, and color
+  - bark() function
+  
+  Before writing the code, explain why bark() should be a classic function rather than arrow function when it uses
+  'this' operator.
+
+- I learned in this exercise how to make the AI agent create an object and explain why it has to use the classic function rather than the arrow function.
+
+---
