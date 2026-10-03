@@ -88,3 +88,16 @@ If it encounters an erro, explain the error before fixing it.
 
 - In this exercise, I learned how to make my agent fix some bugs and implement a safe fix.
 
+---
+
+- ### 07_dom.html
+- Open the file 07_dom.html
+  
+  Read only, do not modify
+  Explain the following:
+  1. Button that responsible for behavior
+  2. Changes the text
+  3. Scripts used
+
+- In this exercise, I make my agent read my file and explain the parts that are responsible for behavior and changes as well as the scripts used.
+
