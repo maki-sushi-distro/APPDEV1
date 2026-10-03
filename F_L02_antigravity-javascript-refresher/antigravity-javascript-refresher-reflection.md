@@ -112,3 +112,15 @@ If it encounters an erro, explain the error before fixing it.
 
 - I learned in this exercise how to make my agent create an array and apply destructuring, and I also learned how the destructuring works with the help of the explanation created by the agent.
 
+---
+
+- ### 09_tricky_parts.js
+-  Open file 09_tricky_parts.js
+  Read the file
+  
+  Before you run the file, create a prediction table and after, run the file and compare the actual output to your
+  created prediction table.
+  
+  Include:
+  Explain the following javascript functions used in the file, and write down their differences.
+- I learned in this exercise about how the agent predicts and compare its work to the real output
