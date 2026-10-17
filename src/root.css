@@ -1,0 +1,35 @@
+:root {
+  /* ---------- Colors ---------- */
+  --color-primary: #5b86e5;
+  --color-primary-dark: #4a74d4;
+  --color-primary-light: #a9c0f0;
+  --color-primary-tint: #f0f4ff;
+  --color-white: #fff;
+  --color-text: #000;
+  --color-text-muted: #9a9a9a;
+  --color-gray: #888;
+  --color-border: #333;
+  --color-border-light: #999;
+  --color-logo-shadow: rgba(60, 80, 140, 0.35);
+
+  /* ---------- Typography ---------- */
+  --font-main: "Rubik", sans-serif;
+  --fs-sm: 14px;
+  --fs-base: 16px;
+  --fs-lg: 28px;
+  --fs-xl: 32px;
+  --fw-light: 300;
+  --fw-bold: 700;
+  --ls-wide: 1px;
+
+  /* ---------- Radius ---------- */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-xl: 60px;
+
+  /* ---------- Layout ---------- */
+  --card-width: 86vw;
+  --card-height: 82vh;
+  --card-min-height: 600px;
+  --form-width: 575px;
+}
