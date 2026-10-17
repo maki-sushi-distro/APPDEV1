@@ -1,15 +1,14 @@
 import { useState } from "react";
 import Login from "./components/login/Login";
-import "./index.css";
+import Signup from "./components/signup/Signup";
 
-function App() {
-  const [count, setCount] = useState(0);
+export default function App() {
+  const [page, setPage] = useState("login");
 
   return (
     <>
-      <Login />
+      {page === "login" && <Login onGoToSignup={() => setPage("signup")} />}
+      {page === "signup" && <Signup onGoToLogin={() => setPage("login")} />}
     </>
   );
 }
-
-export default App;

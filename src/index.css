@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  font-family: "Rubik", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 32px;
   background: #5b86e5;
 }
