@@ -1,0 +1,208 @@
+/* ---------- Card ---------- */
+.login {
+  display: flex;
+  width: var(--card-width);
+  height: var(--card-height);
+  min-height: var(--card-min-height);
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  isolation: isolate; /* keeps the rounded clipping reliable in Safari */
+}
+
+/* ---------- Left (image) ---------- */
+.left {
+  flex: 0 0 45%;
+  width: 45%;
+  border-radius: var(--image-border-radius);
+  overflow: hidden;
+}
+
+.image {
+  display: block; /* removes the inline gap under images */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Right (content) ---------- */
+.right {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 48px;
+}
+
+.greeting {
+  align-self: flex-start;
+  margin: 0;
+  font-family: var(--font-main);
+  font-size: clamp(28px, 3vw, var(--primary-font-size));
+  line-height: 1.1;
+}
+
+.hello {
+  color: var(--primary-font-color);
+  font-weight: var(--font-weight);
+}
+
+.name {
+  color: var(--primary-color);
+  font-size: 0.65em;
+  font-weight: 400;
+}
+
+/* ---------- Tabs ---------- */
+.tabs {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.tab {
+  padding: 4px 8px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  font-family: var(--font-main);
+  font-size: clamp(16px, 1.6vw, var(--secondary-font-size));
+  font-weight: var(--font-weight);
+  color: var(--off-font-color);
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.tab:hover {
+  color: var(--primary-color);
+}
+
+.tab.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.tab:disabled {
+  cursor: default;
+  color: var(--off-font-color);
+}
+
+.tab:disabled:hover {
+  color: var(--off-font-color);
+}
+
+.tab:focus-visible,
+.submit:focus-visible,
+.socialBtn:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+/* ---------- Form ---------- */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 80%;
+  max-width: var(--form-width);
+  margin-top: 48px;
+}
+
+.input {
+  width: 100%;
+  padding: 6px 0;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  border-radius: 0;
+  background: transparent;
+  font-family: var(--font-main);
+  font-size: clamp(13px, 1.2vw, var(--input-font-size));
+  color: var(--primary-color);
+}
+
+.input::placeholder {
+  color: var(--secondary-font-color);
+}
+
+.input:focus {
+  outline: none;
+  border-bottom-color: var(--primary-font-color);
+}
+
+.submit {
+  margin-top: 8px;
+  padding: 12px 0;
+  border: none;
+  background: var(--primary-color);
+  font-family: var(--font-main);
+  font-size: clamp(14px, 1.2vw, var(--input-font-size));
+  font-weight: var(--font-weight);
+  color: #fff;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.submit:hover {
+  filter: brightness(1.1);
+}
+
+/* ---------- Social ---------- */
+.or {
+  margin: 24px 0 16px;
+  font-family: var(--font-main);
+  font-size: clamp(12px, 1vw, 18px);
+  color: var(--secondary-font-color);
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.socialBtn {
+  display: grid;
+  place-items: center;
+  padding: 4px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.socialBtn:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 768px) {
+  .login {
+    --card-width: 92vw;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left {
+    flex: none;
+    width: 100%;
+    height: 180px;
+  }
+
+  .right {
+    padding: 32px 24px;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tab,
+  .submit,
+  .socialBtn {
+    transition: none;
+  }
+}
